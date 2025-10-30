@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    background-color: #2165b6;
+    padding: 15px;
+}
+
+.logo {
+    height: 45px;
+    margin-right: 25px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 7px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.menu li a:hover {
+    background: #164d8f;
+}
+
+main {
+    padding: 35px 15px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+h1, h2 {
+    color: #2165b6;
+}
+
+p {
+    color: #222;
+    font-size: 1rem;
+}
+/* Style the new button */
+.btn-profile {
+    margin-left: 15px;
+    padding: 7px 14px;
+    background-color: #1694e8;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-profile:hover {
+    background-color: #0c68b1;
+}
+
+/* Hide profile by default */
+#profile {
+    display: none;
+}
+
+/* Show profile and hide welcome when #profile is targeted */
+#profile:target {
+    display: block;
+}
+
+#profile:target ~ #welcome {
+    display: none;
+}

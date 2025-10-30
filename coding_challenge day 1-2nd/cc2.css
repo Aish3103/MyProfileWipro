@@ -1,0 +1,97 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header nav styles */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2165b6;
+    padding: 15px 20px;
+}
+
+/* Logo sizing */
+.logo {
+    height: 45px;
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 7px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.menu li a:hover {
+    background: #164d8f;
+}
+
+/* Container and main */
+main.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* Card style for sections */
+.card {
+    background: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+/* Headings and text */
+h1, h2, h4 {
+    color: #2165b6;
+}
+
+p {
+    color: #222;
+    font-size: 1rem;
+}
+
+/* Image styling */
+.photoid {
+    border-radius: 50%;
+}
+
+/* Show/hide sections with :target */
+
+/* Hide all by default */
+#welcome, #profile, #timetable {
+    display: none;
+}
+
+/* Show welcome if no target or targeted */
+body:not(:target) #welcome,
+#welcome:target {
+    display: block;
+}
+
+/* Show profile or timetable when targeted */
+#profile:target, #timetable:target {
+    display: block;
+}
+
+/* Optional: Responsive table in timetable when Bootstrap included */
+table.table {
+    width: 100%;
+}

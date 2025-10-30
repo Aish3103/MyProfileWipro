@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spring Flowers School - Sprint 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="school-logo.png" alt="School Logo" class="logo" />
+      <ul class="menu" id="menu">
+        <!-- Menu items dynamically updated based on login status -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Login/Register form - visible initially -->
+    <section id="auth" class="card">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="User Name" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="loginBtn">Login</button>
+      <p id="authMsg" style="color:red;"></p>
+    </section>
+
+    <!-- Welcome Page -->
+    <section id="welcome" class="card hidden">
+      <h1>Welcome to Spring Flowers School!</h1>
+      <p>Empowering minds, Inspiring futures.</p>
+    </section>
+
+    <!-- Monthly Activities Page -->
+    <section id="monthly" class="card hidden">
+      <h2>Monthly Activities</h2>
+      <label for="subjectSelect">Select Subject: </label>
+      <select id="subjectSelect">
+        <option value="all">All</option>
+        <option value="Maths">Maths</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+      </select>
+      <ul id="activityList"></ul>
+    </section>
+  </main>
+<script src="app.js"></script>
+</body>
+</html>

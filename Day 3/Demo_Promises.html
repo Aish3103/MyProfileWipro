@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script>
+        // Simulating API Call with Promises
+        function orderFood() { 
+            return new Promise((resolve, reject) => {
+                // resolve  and reject are callback functions that we can call based on the outcome of the asynchronous operation
+                // Simulating a delay for food preparation
+                console.log("Step 1: You order something to eat.");
+                setTimeout(() => {
+                    console.log("Step 2: Kitchen prepares your food.");
+                    resolve("Food is ready!");
+                }, 2000);
+                // 2000 is 2 seconds delay
+            });
+        }
+        function serveFood() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log("Step 3: Waiter brings food to your table.");
+                    resolve();
+                }, 1000); // 1 second delay
+            });
+        }
+    // Using the Promises
+        orderFood()
+            .then((message) => {
+                // here message is "Food is ready!" 
+                console.log(message);
+                return serveFood();
+            })
+            .then(() => {
+                console.log("Enjoy your meal!");
+            });
+    </script> -->
+    <!-- // In mathUtils.js, Student management system _ studentUtils.js( calculate Grade(),formatStudentInfo()) -->
+ <!-- DataStore.js for handling data related operations we can have getStudents() saveStudents()  -->
+<!-- validations.js for input validations -->
+ <!-- apiUtils.js for making API calls -->
+  <!-- stringUtils.js for string manipulation functions ex concatenate, split, substring etc -->
+    <div id="output"></div>
+
+    <script>
+      function fetchTodo() {
+        return fetch('https://jsonplaceholder.typicode.com/todos/1')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+          });
+      }
+    
+      fetchTodo()
+        .then(data => {
+          const outputDiv = document.getElementById('output');
+          outputDiv.innerHTML = "<h3>Todo Items</h3>"; 
+    
+
+          const ul = document.createElement('ul'); 
+          const li = document.createElement('li');
+            li.textContent = data.title;
+            ul.appendChild(li);
+          outputDiv.appendChild(ul);
+        })
+        .catch(error => {
+          const outputDiv = document.getElementById('output');
+          outputDiv.textContent = "There was a problem with the fetch operation: " + error.message;
+        });
+    </script>
+    
+</body>
+</html>

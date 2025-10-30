@@ -1,0 +1,31 @@
+.hidden {
+    display: none;
+  }
+  
+  input[type="text"], input[type="password"], select {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #2165b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #164d8f;
+  }
+  
+  #activityList {
+    margin-top: 15px;
+    list-style: disc;
+    padding-left: 20px;
+  }
+  

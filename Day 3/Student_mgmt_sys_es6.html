@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Student Management Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #output { margin-top: 1em; }
+  </style>
+</head>
+<body>
+  <h2>Simple Student Management ES6 Demo</h2>
+  <button id="runBtn">Show Student Info</button>
+  <div id="output"></div>
+
+  <script>
+    document.getElementById('runBtn').onclick = function() {
+      // Get the output div
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = ""; 
+
+      // 1. let and const
+      let course = "JavaScript Basics";
+      const institute = "Learning Center";
+
+      outputDiv.innerHTML += "<strong>Course:</strong> " + course + "<br>";
+      outputDiv.innerHTML += "<strong>Institute:</strong> " + institute + "<br><br>";
+
+      const coreSubjects = ["HTML", "CSS"];
+      const advancedSubjects = ["JavaScript"];
+      const allSubjects = [...coreSubjects, ...advancedSubjects]; // Combine arrays
+
+      outputDiv.innerHTML += "<strong>Subjects:</strong> " + allSubjects.join(", ") + "<br><br>";
+
+      const greet = name => "Welcome, " + name + "!";
+      
+      class Student {
+        constructor(name, age, skills) {
+          this.name = name;
+          this.age = age;
+          this.skills = skills;
+        }
+        showDetails() {
+          return "Name: " + this.name + ", Age: " + this.age + ", Skills: " + this.skills.join(", ");
+        }
+      }
+
+      const student1 = new Student("Aishwarya", 22, ["HTML", "CSS"]);
+      const student2 = new Student("Arya", 22, ["JavaScript", "CSS"]);
+
+      outputDiv.innerHTML += "<strong>Greetings:</strong><br>";
+      outputDiv.innerHTML += greet(student1.name) + "<br>";
+      outputDiv.innerHTML += greet(student2.name) + "<br><br>";
+
+      outputDiv.innerHTML += "<strong>Student Details:</strong><br>";
+      outputDiv.innerHTML += student1.showDetails() + "<br>";
+      outputDiv.innerHTML += student2.showDetails() + "<br><br>";
+
+      const grades = new Map();
+      grades.set(student1.name, "A");
+      grades.set(student2.name, "B");
+
+      outputDiv.innerHTML += "<strong>Grades:</strong><br>";
+      grades.forEach((grade, name) => {
+        outputDiv.innerHTML += name + ": " + grade + "<br>";
+      });
+      outputDiv.innerHTML += "<br>";
+
+      const skillSet = new Set([...student1.skills, ...student2.skills]);
+      outputDiv.innerHTML += "<strong>Unique Skills:</strong> ";
+      outputDiv.innerHTML += Array.from(skillSet).join(", ");
+    };
+  </script>
+</body>
+</html>

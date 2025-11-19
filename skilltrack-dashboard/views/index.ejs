@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillTrack — Students</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background: #f2f2f2; }
+    form { margin-top: 1rem; }
+    label { display:block; margin: 0.4rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Student Progress Dashboard</h1>
+
+  <h2>Students</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Progress (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let s of students) { %>
+        <tr>
+          <td><%= s.id %></td>
+          <td><%= s.name %></td>
+          <td><%= s.email %></td>
+          <td><%= s.progress %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+
+  <h2>Add Student</h2>
+  <form action="/students" method="POST">
+    <label>
+      Name:<br />
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      Email:<br />
+      <input type="email" name="email" required />
+    </label>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <hr />
+  <p>
+    <a href="/error-test">Click to test error-handling middleware</a>
+  </p>
+</body>
+</html>

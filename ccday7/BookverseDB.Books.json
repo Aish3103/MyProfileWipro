@@ -1,0 +1,62 @@
+[{
+  "_id": {
+    "$oid": "69180b0132d18b82d004b7a3"
+  },
+  "title": "Foundation",
+  "genre": "Science Fiction",
+  "publicationYear": 1956,
+  "authorId": "6918090c32d18b82d004b792",
+  "ratings": [
+    {
+      "user": "Aishwarya",
+      "score": 4,
+      "comment": "Great pacing!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69180b0132d18b82d004b7a4"
+  },
+  "title": "I, Robot",
+  "genre": "Science Fiction",
+  "publicationYear": 1950,
+  "authorId": "6918090c32d18b82d004b792",
+  "ratings": []
+},
+{
+  "_id": {
+    "$oid": "69180b0132d18b82d004b7a5"
+  },
+  "title": "Harry Potter and the Sorcerer’s Stone",
+  "genre": "Fantasy",
+  "publicationYear": 1997,
+  "authorId": "6918090c32d18b82d004b793",
+  "ratings": []
+},
+{
+  "_id": {
+    "$oid": "69180b0132d18b82d004b7a6"
+  },
+  "title": "Till the last breath",
+  "genre": "Fantasy",
+  "publicationYear": 2010,
+  "authorId": "6918090c32d18b82d004b794",
+  "ratings": [
+    {
+      "user": "Aishwarya",
+      "score": 5,
+      "comment": "Emotional rollercoaster!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69180b0132d18b82d004b7a7"
+  },
+  "title": "Life in a Metro",
+  "genre": "Fiction",
+  "publicationYear": 2018,
+  "authorId": "6918090c32d18b82d004b794",
+  "ratings": []
+}]

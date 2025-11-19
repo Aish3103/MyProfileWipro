@@ -1,0 +1,8 @@
+node_modules/
+
+# Ignore lockfiles (optional)
+package-lock.json
+yarn.lock
+
+# Ignore nodemon state files
+.nodemon*

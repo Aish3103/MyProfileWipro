@@ -1,0 +1,6 @@
+{
+  "books": [
+    { "id": 1, "title": "Atomic Habits", "author": "James Clear", "price": 20, "bio": "James Clear is a writer...", "topBooks": ["Atomic Habits", "Transform Habits", "Better You"] },
+    { "id": 2, "title": "Deep Work", "author": "Cal Newport", "price": 18, "bio": "Cal Newport is a computer science professor...", "topBooks": ["Deep Work", "Digital Minimalism", "So Good They Can't Ignore You"] }
+  ]
+}

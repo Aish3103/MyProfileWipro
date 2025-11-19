@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6918090c32d18b82d004b792"
+  },
+  "name": "Isaac Asimov",
+  "nationality": "Russian-American",
+  "birthYear": 1920
+},
+{
+  "_id": {
+    "$oid": "6918090c32d18b82d004b793"
+  },
+  "name": "J.K. Rowling",
+  "nationality": "British",
+  "birthYear": 1965
+},
+{
+  "_id": {
+    "$oid": "6918090c32d18b82d004b794"
+  },
+  "name": "Durjoy Datta",
+  "nationality": "Indian",
+  "birthYear": 1985
+}]

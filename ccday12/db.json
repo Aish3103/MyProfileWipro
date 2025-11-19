@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 20,
+      "bio": "James Clear writes about habits and self improvement.",
+      "topBooks": ["Atomic Habits", "Transform Habits", "Better You"]
+    },
+    {
+      "id": 2,
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "price": 18,
+      "bio": "Cal Newport is a professor and bestselling author.",
+      "topBooks": ["Deep Work", "Digital Minimalism", "So Good They Can't Ignore You"]
+    },
+    {
+      "id": 3,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "price": 25,
+      "bio": "Robert Kiyosaki writes about financial education.",
+      "topBooks": ["Rich Dad Poor Dad", "Cashflow Quadrant", "Retire Young Retire Rich"]
+    }
+  ]
+}
